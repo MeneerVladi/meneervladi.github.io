@@ -1,16 +1,13 @@
 ---
+import BaseLayout from '@layouts/BaseLayout.astro';
 
+const pageTitle = "Hi! Vladi hier";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<div>
+		<p>Lorem ipsum dolor sit amet. Eum nemo iusto ex Quis temporibus et atque eveniet aut aperiam numquam qui debitis quia et reiciendis cupiditate. Ut quas repellendus eum obcaecati autem vel dolore soluta ab illo eius. Sit fuga odit sit accusamus quidem.</p>
+		<p>Klik <a href="/over/" class="link">hier</a> als je meer over mij wil weten.</p>
+	</div>
+
+</BaseLayout>
